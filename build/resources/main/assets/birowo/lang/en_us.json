@@ -1,0 +1,11 @@
+{
+	"key.birowo.keys": "Birowo Keys",
+	"key.birowo.esp": "Toggle ESP",
+	"key.birowo.blockesp": "Toggle BlockESP",
+	"key.birowo.targetesp": "Toggle TargetESP",
+	"key.birowo.killaura": "Toggle KillAura",
+	"key.birowo.triggerbot": "Toggle TriggerBot",
+	"key.birowo.clickgui": "Open the interface",
+	"key.birowo.hud": "Toggle HUD",
+	"key.birowo.aimassist": "Toggle AimAssist"
+}

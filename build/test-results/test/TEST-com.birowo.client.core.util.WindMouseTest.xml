@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.birowo.client.core.util.WindMouseTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-11-06T13:03:28.575Z" hostname="codespaces-0fdbaf" time="0.038">
+  <properties/>
+  <testcase name="comesToRestOnTheTarget()" classname="com.birowo.client.core.util.WindMouseTest" time="0.01"/>
+  <testcase name="forgetsItsMovementWhenItIsReset()" classname="com.birowo.client.core.util.WindMouseTest" time="0.003"/>
+  <testcase name="movesTowardsTheTarget()" classname="com.birowo.client.core.util.WindMouseTest" time="0.0"/>
+  <testcase name="neverMovesFurtherThanTheSpeedAllows()" classname="com.birowo.client.core.util.WindMouseTest" time="0.015"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

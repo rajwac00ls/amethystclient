@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "ixeris",
+  "version": "4.6.2+1.21.11-fabric",
+  "name": "Ixeris",
+  "description": "Buffered raw input and threaded event polling",
+  "authors": [
+    "decce"
+  ],
+  "contributors": [
+    "LitnhJacuzzi"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/ixeris",
+    "sources": "https://github.com/decce6/Ixeris",
+    "issues": "https://github.com/decce6/Ixeris/issues"
+  },
+  "license": "LGPL-3.0-only",
+  "icon": "ixeris.png",
+  "environment": "*",
+  "entrypoints": {
+    "preLaunch": [
+      "hack.echo.client.EchoPreLaunch"
+    ],
+    "main": [
+      "hack.echo.client.Echo"
+    ]
+  },
+  "mixins": [
+    "echo.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "accessWidener": "echo.accesswidener"
+}

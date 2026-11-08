@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.birowo.client.platform.rotation.AimPointTrackerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-11-06T13:03:28.822Z" hostname="codespaces-0fdbaf" time="0.19">
+  <properties/>
+  <testcase name="keepsThePointOnTheBodyOfTheTarget()" classname="com.birowo.client.platform.rotation.AimPointTrackerTest" time="0.179"/>
+  <testcase name="startsTheNewTargetInsideTheBandOfTheBody()" classname="com.birowo.client.platform.rotation.AimPointTrackerTest" time="0.001"/>
+  <testcase name="movesThePointOverTheBody()" classname="com.birowo.client.platform.rotation.AimPointTrackerTest" time="0.008"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

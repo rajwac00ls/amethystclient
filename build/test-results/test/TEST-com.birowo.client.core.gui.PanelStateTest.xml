@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.birowo.client.core.gui.PanelStateTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-11-06T13:03:28.345Z" hostname="codespaces-0fdbaf" time="0.043">
+  <properties/>
+  <testcase name="aPanelIsCollapsedAndExpandedAgain()" classname="com.birowo.client.core.gui.PanelStateTest" time="0.008"/>
+  <testcase name="aPanelThatIsSettledIsAtItsRestingPlace()" classname="com.birowo.client.core.gui.PanelStateTest" time="0.001"/>
+  <testcase name="aPanelThatWasMovedEasesTowardsItsNewPlace()" classname="com.birowo.client.core.gui.PanelStateTest" time="0.006"/>
+  <testcase name="aPanelThatIsSnappedIsThereAtOnce()" classname="com.birowo.client.core.gui.PanelStateTest" time="0.001"/>
+  <testcase name="aPanelThatIsPickedUpWhileItMovesDoesNotJump()" classname="com.birowo.client.core.gui.PanelStateTest" time="0.003"/>
+  <testcase name="aPanelThatIsScrolledNeverScrollsBackwards()" classname="com.birowo.client.core.gui.PanelStateTest" time="0.005"/>
+  <testcase name="aPanelArrivesAtItsNewPlaceAfterAWhile()" classname="com.birowo.client.core.gui.PanelStateTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.birowo.client.core.util.StepQuantiserTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-11-06T13:03:28.540Z" hostname="codespaces-0fdbaf" time="0.025">
+  <properties/>
+  <testcase name="letsEveryMovementThroughWhenThereIsNoGrid()" classname="com.birowo.client.core.util.StepQuantiserTest" time="0.002"/>
+  <testcase name="forgetsTheLeftoverWhenItIsReset()" classname="com.birowo.client.core.util.StepQuantiserTest" time="0.004"/>
+  <testcase name="roundsEveryMovementToTheGrid()" classname="com.birowo.client.core.util.StepQuantiserTest" time="0.004"/>
+  <testcase name="addsUpToTheMovementThatWasAskedFor()" classname="com.birowo.client.core.util.StepQuantiserTest" time="0.001"/>
+  <testcase name="keepsWhatIsLeftOverForTheNextMovement()" classname="com.birowo.client.core.util.StepQuantiserTest" time="0.001"/>
+  <testcase name="neverMovesFurtherThanTheMovementItWasGiven()" classname="com.birowo.client.core.util.StepQuantiserTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

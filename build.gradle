@@ -1,0 +1,81 @@
+plugins {
+	// Loom 1.12.x is the line FabricMC's own Yarn 1.21.11 build pins (1.12.0-alpha.39);
+	// 1.12.7 is the patched release of that same line.
+	id 'fabric-loom' version '1.15.5'
+	id 'maven-publish'
+}
+
+version = project.mod_version
+group = project.maven_group
+
+loom {
+	// The mixin annotation processor writes the mapping of the mixin targets into a refmap,
+	// which is what lets the mixins find their targets in the obfuscated game.
+	mixin {
+		defaultRefmapName = "${project.archives_base_name}-refmap.json"
+		useLegacyMixinAp = true
+	}
+
+	accessWidenerPath = file("src/main/resources/birowo.accesswidener")
+}
+
+base {
+	archivesName = project.archives_base_name
+}
+
+repositories {
+	mavenCentral()
+	maven {
+		name = 'Fabric'
+		url = 'https://maven.fabricmc.net/'
+	}
+}
+
+dependencies {
+	minecraft "com.mojang:minecraft:${project.minecraft_version}"
+	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
+
+	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+
+	// The tests cover the parts of the client that do not need the game: the arithmetic of the
+	// aim, the event bus, the configuration and the lifecycle of the modules.
+	testImplementation platform('org.junit:junit-bom:5.10.2')
+	testImplementation 'org.junit.jupiter:junit-jupiter'
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+// Captured at configuration time: the configuration cache forbids touching `project` from a
+// closure that runs during execution.
+def modVersion = project.version
+
+processResources {
+	inputs.property 'version', modVersion
+
+	filesMatching('fabric.mod.json') {
+		expand 'version': modVersion
+	}
+}
+
+java {
+	// Minecraft 1.21.11 targets Java 21. The toolchain is provisioned automatically
+	// via the foojay resolver declared in settings.gradle.
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(21)
+	}
+
+	withSourcesJar()
+}
+
+tasks.withType(JavaCompile).configureEach {
+	it.options.encoding = 'UTF-8'
+	it.options.release = 21
+	it.options.compilerArgs << '-Xlint:deprecation'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+	testLogging {
+		events 'passed', 'skipped', 'failed'
+	}
+}

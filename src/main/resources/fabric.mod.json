@@ -1,0 +1,27 @@
+{
+	"schemaVersion": 1,
+	"id": "birowo",
+	"version": "${version}",
+	"name": "Birowo Client",
+	"description": "A modular Minecraft client for 1.21.11.",
+	"authors": [
+		"rajwac00ls"
+	],
+	"license": "MIT",
+	"environment": "client",
+	"accessWidener": "birowo.accesswidener",
+	"mixins": [
+		"birowo.mixins.json"
+	],
+	"entrypoints": {
+		"client": [
+			"com.birowo.client.BirowoClient"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.16.0",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
